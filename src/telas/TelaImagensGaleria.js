@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Essa tela tem como função contemplar o tópico 2 do trabalho, uma tela onde o usuário pode adicionar e remover
+ * imagens, as quais estão no diretório "/public/tela2/", na tela.
+ * @author Gabriel Guimarães de Almeida
+ * */
 class TelaImagensGaleria extends React.Component{
     constructor(props) {
         super(props);
@@ -30,6 +35,12 @@ class TelaImagensGaleria extends React.Component{
         )
     }
 
+    /**
+     * Essa função realiza o tratamento de qualquer submit que o formulário receba, nele é adicionado ou retirado
+     * as imagens do state.
+     * @param event evento recebido do form
+     * @author Gabriel Guimarães de Almeida
+     * */
     submitForm(event) {
         let numeroImagem = event.target[0].value
 
@@ -44,6 +55,11 @@ class TelaImagensGaleria extends React.Component{
         event.preventDefault()
     }
 
+    /**
+     * Essa função realiza a cosntrução dos elementos das imagens na tela para o usuário
+     * @return vetor de elementos "<img>"
+     * @author Gabriel Guimarães de Almeida
+     * */
     renderImagens() {
         return this.state.imagens.map(
             (imagem, i) => (
