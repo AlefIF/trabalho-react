@@ -4,7 +4,7 @@ import TelaImagensGaleria from './telas/TelaImagensGaleria';
 import Tela3 from './telas/Tela3';
 import Tela4 from './telas/Tela4';
 import React from "react";
-import TelaAPI from "./telas/Tela5";
+import TelaAPI from "./telas/TelaAPI";
 
 /**
  * Essa tela tem como função comportar toda a estrutura do projeto e conseguir mostrar todas as outras telas.
