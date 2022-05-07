@@ -1,7 +1,7 @@
 import './App.css';
 import TelaBemVindo from './telas/TelaBemVindo.js';
 import TelaImagensGaleria from './telas/TelaImagensGaleria';
-import Tela3 from './telas/Tela3';
+import TelaFrutas from './telas/TelaFrutas';
 import Tela4 from './telas/Tela4';
 import React from "react";
 import TelaAPI from "./telas/TelaAPI";
@@ -52,8 +52,8 @@ class App extends React.Component{
                 label: '#2 Galeria'
             },
             {
-                tela: <Tela3 />,//TODO modificar tela quando implementada
-                label: 'Tela3'//TODO mudar label
+                tela: <TelaFrutas />,
+                label: '#3 Frutas'
             },
             {
                 tela: <Tela4 />,//TODO modificar tela quando implementada
