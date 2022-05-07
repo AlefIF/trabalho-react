@@ -23,9 +23,12 @@ class App extends React.Component{
         return (
             <div>
                 <h1>Trabalho DWA</h1>
+                <h3>Você está na <b>{this.state.telas[this.state.index].label}</b></h3>
+                <hr/>
                 <div>
                     {this.renderBotoesDeNavegacao()}
                 </div>
+                <hr/>
                 <div>
                     {this.state.telas[this.state.index].tela}
                 </div>
