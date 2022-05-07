@@ -37,6 +37,7 @@ class TelaFrutas extends React.Component {
 
     /**
      * Essa função mapeia o array de frutas e para cada index do array, cria uma tag option e retorna o resultado
+     * @return retorna os options gerados no mapeamento
      * @author Alef Faria Silva
      * */
     renderOptions() {
@@ -52,7 +53,6 @@ class TelaFrutas extends React.Component {
      * @author Alef Faria Silva
      * */
     handleEvent(event) {
-        console.log(event.target[0].value)
         let frutasCopy = this.state.arrayFrutas;
         frutasCopy.push(event.target[0].value);
         this.setState({arrayFrutas: frutasCopy});
