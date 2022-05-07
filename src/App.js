@@ -1,6 +1,6 @@
 import './App.css';
 import TelaBemVindo from './telas/TelaBemVindo.js';
-import Tela2 from './telas/Tela2';
+import TelaImagensGaleria from './telas/TelaImagensGaleria';
 import Tela3 from './telas/Tela3';
 import Tela4 from './telas/Tela4';
 import React from "react";
@@ -48,8 +48,8 @@ class App extends React.Component{
                 label: 'Tela bem-vindo'
             },
             {
-                tela: <Tela2 />,//TODO modificar tela quando implementada
-                label: 'Tela2'//TODO mudar label
+                tela: <TelaImagensGaleria />,
+                label: '#2 Galeria'
             },
             {
                 tela: <Tela3 />,//TODO modificar tela quando implementada
@@ -94,7 +94,7 @@ class App extends React.Component{
     renderBotoesDeNavegacao() {
         return this.state.telas.map(
             (tela, i) => (
-                <button disabled={this.isIndexDisabled(i)} onClick={() => this.mudaIndex(i)}>{tela.label}</button>
+                <button key={i} disabled={this.isIndexDisabled(i)} onClick={() => this.mudaIndex(i)}>{tela.label}</button>
             )
         )
     }
