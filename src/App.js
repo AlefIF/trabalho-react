@@ -3,8 +3,8 @@ import TelaBemVindo from './telas/TelaBemVindo.js';
 import TelaImagensGaleria from './telas/TelaImagensGaleria';
 import TelaFrutas from './telas/TelaFrutas';
 import Tela4 from './telas/Tela4';
-import Tela5 from './telas/Tela5';
 import React from "react";
+import TelaAPI from "./telas/TelaAPI";
 
 /**
  * Essa tela tem como função comportar toda a estrutura do projeto e conseguir mostrar todas as outras telas.
@@ -60,8 +60,8 @@ class App extends React.Component{
                 label: 'Tela4'//TODO mudar label
             },
             {
-                tela: <Tela5 />,//TODO modificar tela quando implementada
-                label: 'Tela5'//TODO mudar label
+                tela: <TelaAPI />,
+                label: '#5 API'
             }
         ];
     }
