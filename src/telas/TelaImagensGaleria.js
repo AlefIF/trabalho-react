@@ -2,7 +2,7 @@ import React from "react";
 
 /**
  * Essa tela tem como função contemplar o tópico 2 do trabalho, uma tela onde o usuário pode adicionar e remover
- * imagens, as quais estão no diretório "/public/tela2/", na tela.
+ * imagens, as quais estão no diretório "/galeria/", na tela.
  * @author Gabriel Guimarães de Almeida
  * */
 class TelaImagensGaleria extends React.Component{
@@ -63,7 +63,7 @@ class TelaImagensGaleria extends React.Component{
     renderImagens() {
         return this.state.imagens.map(
             (imagem, i) => (
-                <img height="200px" width="200px" key={i} alt={imagem} src={require('../../public/tela2/' + imagem + '.png')} />
+                <img height="200px" width="200px" key={i} alt={imagem} src={require('../galeria/' + imagem + '.png')} />
             )
         )
     }
