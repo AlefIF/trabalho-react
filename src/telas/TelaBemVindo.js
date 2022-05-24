@@ -1,5 +1,3 @@
-import App from "../App";
-
 function TelaBemVindo(props) {
     return (
         <div>
